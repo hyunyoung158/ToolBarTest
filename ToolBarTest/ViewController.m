@@ -53,7 +53,7 @@
     //리프레쉬 버튼 추가
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(handleRefresh:)];
     
-    NSArray *items = [NSArray arrayWithObjects:titleButton, segmentButton, space, refreshButton, nil];
+    NSArray *items = @[titleButton, segmentButton, space, refreshButton];
     [toolbar setItems:items];
     
     [self.view addSubview:toolbar];
